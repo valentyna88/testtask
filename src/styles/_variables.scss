@@ -1,0 +1,44 @@
+// Colors
+$primary: #f4e041;
+$primary-hover: #ffe302;
+$secondary: #00bdd3;
+$background: #f8f8f8;
+$black-87: rgba(0, 0, 0, 0.87);
+
+$gray: #7e7e7e; // muted text
+$light-gray: #d0cfcf; // input border/lines
+$disabled: #b4b4b4; // disabled text/borders
+$error: #cb3d40;
+$white: #ffffff;
+$black: #000000;
+
+$container: 1170px;
+
+// Typography
+$font-base: "Nunito", Arial, sans-serif;
+$font-accent: "Asap", sans-serif;
+
+$h1-size: 40px;
+$h1-line-height: 40px;
+$h1-weight: 400;
+
+$body-size: 16px;
+$body-line-height: 26px;
+$body-weight: 400;
+
+// Spacing
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 40px;
+
+// Radius
+$radius-sm: 4px;
+$radius-md: 10px;
+$radius-pill: 80px;
+
+$bp-sm: 360px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 2560px;

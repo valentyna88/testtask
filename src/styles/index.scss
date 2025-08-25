@@ -1,0 +1,76 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./reset";
+
+.container {
+  @include container;
+}
+.visually-hidden {
+  @include visually-hidden;
+}
+
+body {
+  background: $background;
+  color: $black-87;
+  font-family: $font-base;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0 0 12px;
+}
+
+section {
+  padding: 40px 0;
+}
+#hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+figure {
+  margin: 0;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ellipsis-2,
+.ellipsis-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ellipsis-2 {
+  -webkit-line-clamp: 2;
+}
+.ellipsis-3 {
+  -webkit-line-clamp: 3;
+}
+
+h1 {
+  font-size: $h1-size;
+  line-height: $h1-line-height;
+  font-weight: $h1-weight;
+}
+
+p {
+  font-size: $body-size;
+  line-height: $body-line-height;
+  margin: 0 0 $space-md;
+}
