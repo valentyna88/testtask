@@ -22,6 +22,12 @@ module.exports = {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset",
+        parser: { dataUrlCondition: { maxSize: 10 * 1024 } },
+        generator: { filename: "assets/[name][hash][ext][query]" },
+      },
     ],
   },
   plugins: [
