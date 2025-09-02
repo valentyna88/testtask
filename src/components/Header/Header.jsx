@@ -1,4 +1,5 @@
 import logoUrl from "../../assets/sprite.svg";
+import Button from "../Button/Button";
 
 const Header = () => {
   return (
@@ -11,12 +12,8 @@ const Header = () => {
         </a>
 
         <nav className="header-nav">
-          <a className="header-link" href="#users">
-            Users
-          </a>
-          <a className="header-link" href="#signup">
-            Sign up
-          </a>
+          <Button href="#users">Users</Button>
+          <Button href="#signup">Sign up</Button>
         </nav>
       </div>
     </header>

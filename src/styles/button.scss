@@ -1,0 +1,41 @@
+@use "./variables" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 100px;
+  height: 34px;
+  padding: 0 20px;
+
+  border: 0;
+  border-radius: $radius-pill;
+  background: $primary;
+  color: $black-87;
+
+  font: inherit;
+  text-decoration: none;
+  line-height: 1.63;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    background: $primary-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $secondary;
+    outline-offset: 2px;
+  }
+
+  &.is-disabled,
+  &:disabled,
+  &[aria-disabled="true"] {
+    background: $disabled;
+    color: $white;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: none;
+  }
+}

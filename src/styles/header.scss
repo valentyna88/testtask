@@ -17,26 +17,4 @@
     display: flex;
     gap: 10px;
   }
-
-  .header-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 34px;
-    border-radius: $radius-pill;
-    background: $primary;
-    color: $black-87;
-    text-decoration: none;
-    line-height: 1.63;
-
-    &:hover {
-      background: $primary-hover;
-    }
-    &:disabled,
-    &.is-disabled {
-      background: $disabled;
-      pointer-events: none;
-    }
-  }
 }
