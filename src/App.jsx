@@ -1,13 +1,10 @@
 import Layout from "./Layout";
+import Hero from "./components/Hero/Hero";
 
 const App = () => {
   return (
     <Layout>
-      <section id="hero" className="hero">
-        <div className="container">
-          <h1>Test assignment for front-end developer</h1>
-        </div>
-      </section>
+      <Hero />
 
       <section id="users" className="users">
         <div className="container">

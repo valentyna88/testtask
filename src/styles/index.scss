@@ -4,6 +4,7 @@
 
 @use "./header";
 @use "./button";
+@use "./hero";
 
 .container {
   @include container;
@@ -22,17 +23,6 @@ h1,
 h2,
 h3 {
   margin: 0;
-}
-p {
-  margin: 0 0 12px;
-}
-
-section {
-  padding: 40px 0;
-}
-#hero {
-  padding: 80px 0;
-  text-align: center;
 }
 
 ul,
@@ -64,16 +54,4 @@ figure {
 }
 .ellipsis-3 {
   -webkit-line-clamp: 3;
-}
-
-h1 {
-  font-size: $h1-size;
-  line-height: $h1-line-height;
-  font-weight: $h1-weight;
-}
-
-p {
-  font-size: $body-size;
-  line-height: $body-line-height;
-  margin: 0 0 $space-md;
 }
