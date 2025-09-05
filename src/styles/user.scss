@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+.users-wrapper {
+  max-width: 288px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.users-photo {
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.users-text {
+  font-weight: $weight;
+  font-size: $body-size;
+  line-height: $body-line-height;
+}
+
+.ellipsis-1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
