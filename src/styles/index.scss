@@ -5,6 +5,8 @@
 @use "./header";
 @use "./button";
 @use "./hero";
+@use "./users";
+@use "./user";
 
 .container {
   @include container;
@@ -18,40 +20,10 @@ body {
   color: $black-87;
   font-family: $font-base;
 }
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 1.2rem;
-}
 table {
   border-collapse: collapse;
   width: 100%;
 }
 figure {
   margin: 0;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.ellipsis-2,
-.ellipsis-3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.ellipsis-2 {
-  -webkit-line-clamp: 2;
-}
-.ellipsis-3 {
-  -webkit-line-clamp: 3;
 }
