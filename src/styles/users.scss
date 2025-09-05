@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+.users {
+  padding: 140px 0;
+}
+
+.users-list {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.user-card {
+  width: 100%;
+  border-radius: $radius-md;
+  background-color: $white;
+  padding: 20px;
+  text-align: center;
+}
+
+.users-title {
+  font-weight: $weight;
+  font-size: $title-size;
+  line-height: $title-line-height;
+  text-align: center;
+}
+
+@media screen and (min-width: $bp-md) {
+  .users-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .users-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 29px;
+  }
+}
+
+@media screen and (min-width: $bp-xl) {
+}
