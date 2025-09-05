@@ -1,16 +1,12 @@
 import Layout from "./Layout";
 import Hero from "./components/Hero/Hero";
+import Users from "./components/Users/Users";
 
 const App = () => {
   return (
     <Layout>
       <Hero />
-
-      <section id="users" className="users">
-        <div className="container">
-          <h2 className="visually-hidden">Working with GET request</h2>
-        </div>
-      </section>
+      <Users />
 
       <section id="signup" className="signup">
         <div className="container">
