@@ -1,3 +1,5 @@
+import { formatPhone } from "../../utils/formatPhone";
+
 const UserCard = ({ user }) => {
   const { photo, name, position, email, phone } = user;
   return (
@@ -21,7 +23,7 @@ const UserCard = ({ user }) => {
           <p className="users-text ellipsis-1" title={email}>
             {email}
           </p>
-          <p className="users-text">{phone}</p>
+          <p className="users-text">{formatPhone(phone)}</p>
         </div>
       </div>
     </>
