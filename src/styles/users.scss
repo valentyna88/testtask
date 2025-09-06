@@ -26,6 +26,11 @@
   text-align: center;
 }
 
+.users-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: $bp-md) {
   .users-list {
     grid-template-columns: repeat(2, 1fr);
